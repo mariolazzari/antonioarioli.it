@@ -1,3 +1,4 @@
+import { ButtonLink } from "@/components/ButtonLink";
 import { CardImage } from "@/components/CardImage";
 import { CardImageProps } from "@/components/CardImage/CardImageProps";
 import { Logo } from "@/components/Logo";
@@ -46,6 +47,27 @@ function HomePage() {
       imagePath: "/images/cop.png",
       href: "/cop",
     },
+    {
+      title: "Riflessologia plantare",
+      description:
+        "La parola riflesso richiama la parola specchio: come in uno specchio, zone che corrispondono a precise funzioni.",
+      imagePath: "/images/reflex.png",
+      href: "/reflex",
+    },
+    {
+      title: "Energy taping",
+      description:
+        "L'Energy Taping può essere definito come un bendaggio adesivo con effetto biomeccanico ed energetico.",
+      imagePath: "/images/taping.png",
+      href: "/taping",
+    },
+    {
+      title: "Kinesiologia emozionale",
+      description:
+        "La Kinesiologia Emozionale RD è l’arte di indagare nell’inconscio per capire cosa sta bloccando un aspetto della tua vita",
+      imagePath: "/images/kine.png",
+      href: "/kine",
+    },
   ];
 
   return (
@@ -77,13 +99,17 @@ function HomePage() {
 
       <div className="flex justify-center gap-4 my-4">
         {buttons.map(b => (
-          <Button key={b.label}>
-            {b.icon} {b.label}
-          </Button>
+          <ButtonLink
+            key={b.label}
+            icon={b.icon}
+            label={b.label}
+            href={b.href}
+            newTab
+          />
         ))}
       </div>
 
-      <div className="flex justify-center items-center gap-8 flex-wrap my-8">
+      <div className="flex justify-center items-center gap-24 flex-wrap my-8">
         {cards.map(card => (
           <CardImage key={card.title} {...card} />
         ))}
