@@ -1,4 +1,14 @@
 import { Job } from "@/components/Job";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Biografia",
+  description:
+    "L’inizio del mio percorso formativo nell’ambito delle discipline bionaturali fu stimolato alcuni anni fa da un’esperienza personale di ascolto dei segnali con i quali il mio corpo parlava attraverso sintomi che da anni si riproponevano.",
+  alternates: {
+    canonical: "/bio",
+  },
+};
 
 function BioPage() {
   const jobs = [
