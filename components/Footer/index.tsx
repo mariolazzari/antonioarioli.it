@@ -1,6 +1,7 @@
-import { Separator } from "../ui/separator";
+import { Separator } from "@/components/ui/separator";
 import { Copyright } from "lucide-react";
 import Link from "next/link";
+import { WhatsApp } from "./WhatsApp";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -19,6 +20,7 @@ export function Footer() {
           </Link>
         </ul>
       </footer>
+      <WhatsApp />
     </>
   );
 }

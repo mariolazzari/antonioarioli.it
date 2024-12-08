@@ -2,7 +2,6 @@ import { ButtonLink } from "@/components/ButtonLink";
 import { CardImage } from "@/components/CardImage";
 import { CardImageProps } from "@/components/CardImage/CardImageProps";
 import { Logo } from "@/components/Logo";
-import { Button } from "@/components/ui/button";
 import { Quote, FileUser } from "lucide-react";
 
 function HomePage() {
