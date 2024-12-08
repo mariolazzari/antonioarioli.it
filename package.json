@@ -1,11 +1,11 @@
 {
   "name": "antonioarioli.it",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start",
+    "start": "next start --port 5555",
     "lint": "next lint",
     "clean": "rm -rf node_modules & rm -rf .next"
   },
