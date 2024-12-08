@@ -2,6 +2,14 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+export const metadata: Metadata = {
+  title: "Corsi",
+  description: "Corsi sostenuti da Antonio Arioli",
+  alternates: {
+    canonical: "/courses",
+  },
+};
+
 // images
 const img1 = "/images/courses/amatoriale prona.jpg";
 const img2 = "/images/courses/Boxhall.jpg";
@@ -22,11 +30,6 @@ const img16 = "/images/courses/kine3.jpeg";
 const img17 = "/images/courses/kine4.jpeg";
 const img18 = "/images/courses/apos2.jpeg";
 const img19 = "/images/courses/kine4c.jpeg";
-
-export const metadata: Metadata = {
-  title: "Corsi",
-  description: "Corsi sostenuti da Antonio Arioli",
-};
 
 function CoursesPage() {
   const images = [

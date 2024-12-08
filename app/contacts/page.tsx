@@ -10,6 +10,15 @@ import {
   FaPeopleCarry,
 } from "react-icons/fa";
 import { Contact } from "@/components/Contact";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contatti",
+  description: "Contatti social Antonio Arioli",
+  alternates: {
+    canonical: "/contacts",
+  },
+};
 
 function LinksPage() {
   // WhatsApp props
@@ -82,4 +91,3 @@ function LinksPage() {
 }
 
 export default LinksPage;
-1;

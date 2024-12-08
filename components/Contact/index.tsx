@@ -13,7 +13,7 @@ import { LinkIcon } from "lucide-react";
 export function Contact({ title, icon, url }: ContactProps) {
   return (
     <Link href={url} target="_blank">
-      <Card className="w-[300px] h-[200px] border border-muted hover:border-primary">
+      <Card className="w-[300px] h-[200px] border border-muted hover:border-primary bg-gradient-to-br from-background to-muted">
         <CardHeader>
           <CardTitle>{title}</CardTitle>
           <CardDescription></CardDescription>
