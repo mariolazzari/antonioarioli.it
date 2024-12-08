@@ -1,11 +1,25 @@
 import { Logo } from "@/components/Logo";
 import { Button } from "@/components/ui/button";
+import { Quote, FileUser } from "lucide-react";
 
 function HomePage() {
   const subtitles = [
     "Discipline bio naturali",
     "Trattamenti Shiatsu",
     "Riflessologia Plantare",
+  ];
+
+  const buttons = [
+    {
+      label: "Referenze",
+      href: "https://www.google.com/search?cs=0&output=search&q=Antonio+Arioli+Shiatsu+Riflessologia+Plantare",
+      icon: <Quote size={32} />,
+    },
+    {
+      label: "Brochure",
+      href: "/pdf/brochure.pdf",
+      icon: <FileUser size={32} />,
+    },
   ];
 
   return (
@@ -26,8 +40,11 @@ function HomePage() {
       </div>
 
       <div className="flex justify-center gap-4 my-4">
-        <Button className="w-32">Referenze</Button>
-        <Button className="w-32">Brochure</Button>
+        {buttons.map(b => (
+          <Button key={b.label}>
+            {b.icon} {b.label}
+          </Button>
+        ))}
       </div>
     </>
   );
