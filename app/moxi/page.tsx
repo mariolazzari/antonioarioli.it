@@ -35,9 +35,9 @@ function MoxiPage() {
           tuttora usato anche nella nostra medicina. La moxibustione è una forma
           di utilizzo del calore al fine di cura, che si applica a zone molto
           precise del corpo, come i punti di agopuntura. Si addice al
-          trattamento di tutte le patologie dominate dal freddo e dall'umidità
-          (stati di raffreddamento). Esistono vari stili di moxa, basati
-          sull’uso dell’artemisia.
+          trattamento di tutte le patologie dominate dal freddo e
+          dall&apos;umidità (stati di raffreddamento). Esistono vari stili di
+          moxa, basati sull’uso dell’artemisia.
         </p>
       </Container>
 

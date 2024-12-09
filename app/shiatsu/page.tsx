@@ -32,18 +32,19 @@ function ShiatsuPage() {
           ricevente favorendone il suo fluire naturale. Le pressioni esercitate
           correttamente attraverso abiti leggeri (non è necessario un contatto
           diretto con la pelle) producono uno stimolo a cui l’organismo della
-          persona trattata 'risponde', recuperando e manifestando “dal profondo”
+          persona trattata “risponde”, recuperando e manifestando “dal profondo”
           le proprie risorse vitali. Peculiarità dello shiatsu biodinamico è
-          l'applicazione dei principi della biodinamica che insegnano,
-          attraverso l’ascolto dell’altro, il rispetto e la valorizzazione
-          dell'unicità che ognuno di noi rappresenta, favorendone la migliore
-          espressione secondo le potenzialità, i tempi e le modalità proprie di
-          ciascuno. I benefici dello shiatsu sul piano sintomatico e della
-          prevenzione sono frutto non di un’attività mirata alla cura delle
-          patologie, ma di un naturale processo evolutivo connesso al generale
-          miglioramento della vitalità e all’ottimizzazione delle risorse
-          personali. Genera una migliore qualità della vita qualsiasi sia l’età,
-          la condizione e lo stato di benessere/disagio della persona coinvolta.
+          l&apos;applicazione dei principi della biodinamica che insegnano,
+          attraverso l&apos;ascolto dell’altro, il rispetto e la valorizzazione
+          dell&apos;unicità che ognuno di noi rappresenta, favorendone la
+          migliore espressione secondo le potenzialità, i tempi e le modalità
+          proprie di ciascuno. I benefici dello shiatsu sul piano sintomatico e
+          della prevenzione sono frutto non di un’attività mirata alla cura
+          delle patologie, ma di un naturale processo evolutivo connesso al
+          generale miglioramento della vitalità e all’ottimizzazione delle
+          risorse personali. Genera una migliore qualità della vita qualsiasi
+          sia l’età, la condizione e lo stato di benessere/disagio della persona
+          coinvolta.
         </p>
       </Container>
       <Title>Trattamento meridiano di vescica biliare</Title>

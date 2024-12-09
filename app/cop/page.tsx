@@ -36,7 +36,7 @@ function CopPage() {
           tecnica del risucchio sia stata la prima pratica terapeutica. Consiste
           nell’applicare una coppetta, ovvero un vasetto di vetro o ceramica, o
           di altri materiali, sulla parte interessata. Questa pratica viene
-          utilizzata anche per disturbi dell'umore, ansia e insonnia.
+          utilizzata anche per disturbi dell&apos;umore, ansia e insonnia.
         </p>
       </Container>
 
