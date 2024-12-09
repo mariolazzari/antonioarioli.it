@@ -2,7 +2,7 @@ import Image from "next/image";
 import ShiatsuImg from "@/public/images/shiatsu.png";
 import { Metadata } from "next";
 import { Container, Title } from "@/components/Typography";
-import { Video } from "@/components/Video";
+import { Video } from "@/components/Players/Video";
 
 export const metadata: Metadata = {
   title: "Shiatsu Biodinamico",
@@ -48,7 +48,7 @@ function ShiatsuPage() {
       </Container>
       <Title>Trattamento meridiano di vescica biliare</Title>
 
-      <Video src="/video/shatsu.mp4" />
+      <Video src="https://cloud1.cam.tv/CID071F56/feed/CNT98E13C/video.mp4?t=1635712543" />
 
       <Container>
         <p className="text-justify">
