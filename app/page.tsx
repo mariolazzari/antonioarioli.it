@@ -2,6 +2,7 @@ import { ButtonLink } from "@/components/ButtonLink";
 import { CardImage } from "@/components/CardImage";
 import { CardImageProps } from "@/components/CardImage/CardImageProps";
 import { Logo } from "@/components/Logo";
+import { Container } from "@/components/Typography";
 import { Quote, FileUser } from "lucide-react";
 
 function HomePage() {
@@ -86,7 +87,7 @@ function HomePage() {
         ))}
       </div>
 
-      <div className="p-8 rounded-xl mx-auto my-4 max-w-xl bg-gradient-to-br from-secondary to-background">
+      <Container>
         <p className="text-justify text-md">
           Aiuto le persone a ritrovare benessere e serenità interiore e fisica
           grazie a tecniche corporee e di rilassamento profondo, introspezione
@@ -94,7 +95,7 @@ function HomePage() {
           accedere al potenziale subconscio, gestire lo stress e superare i
           blocchi emotivi.
         </p>
-      </div>
+      </Container>
 
       <div className="flex justify-center gap-4 my-4">
         {buttons.map(b => (

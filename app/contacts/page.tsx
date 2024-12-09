@@ -8,6 +8,7 @@ import {
   FaUser,
   FaReact,
   FaPeopleCarry,
+  FaQuoteRight,
 } from "react-icons/fa";
 import { Contact } from "@/components/Contact";
 import { Metadata } from "next";
@@ -49,6 +50,11 @@ function LinksPage() {
       url: "https://www.instagram.com/trattamenti_bionaturali",
     },
     {
+      icon: <FaQuoteRight size={64} />,
+      title: "Referenze",
+      url: " https://www.instagram.com/stories/highlights/18230788372227339",
+    },
+    {
       icon: <FaTv size={64} />,
       title: "Il mio CamTV",
       url: "https://www.cam.tv/antonioarioli",
@@ -66,7 +72,7 @@ function LinksPage() {
     {
       icon: <FaPeopleCarry size={64} />,
       title: "APOS",
-      url: "https://mariolazzari.it",
+      url: "https://www.shiatsuapos.com/",
     },
     {
       icon: <FaReact size={64} />,

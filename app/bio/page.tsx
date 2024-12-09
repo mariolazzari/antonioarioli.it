@@ -1,4 +1,5 @@
 import { Job } from "@/components/Job";
+import { Container, Title } from "@/components/Typography";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -71,8 +72,9 @@ function BioPage() {
 
   return (
     <div className="flex flex-col items-center gap-8">
-      <h2 className="text-4xl font-bold">Biografia</h2>
-      <div className="max-w-xl bg-gradient-to-br from-muted to-background rounded-xl p-8 shadow-xl">
+      <Title>Biografia</Title>
+
+      <Container>
         <p className="text-justify">
           L’inizio del mio percorso formativo nell’ambito delle discipline
           bionaturali fu stimolato alcuni anni fa da un’esperienza personale di
@@ -89,7 +91,7 @@ function BioPage() {
           solo fisica, mi motivarono a proseguire il percorso intrapreso e ad
           iscrivermi, nel 2011, alla scuola professionale di Shiatsu.
         </p>
-      </div>
+      </Container>
 
       <h3 className="text-3xl font-semibold my-4">Esperienze</h3>
 

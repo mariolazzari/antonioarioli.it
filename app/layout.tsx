@@ -54,7 +54,7 @@ function RootLayout({ children }: Layout) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <Header />
           <main className="h-[calc(100dvh-100px)] overflow-y-auto p-4">
             {children}

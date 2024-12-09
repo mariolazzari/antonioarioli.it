@@ -22,7 +22,7 @@ export function CardImage({
 
   return (
     <Link href={href} target={target}>
-      <Card className="w-[350px] border border-muted hover:border-primary rounded-xl shadow-xl bg-gradient-to-br from-secondary to-background">
+      <Card className="w-[350px] border border-muted hover:border-primary rounded-xl shadow-xl bg-gradient-to-br from-background to-muted">
         <CardHeader>
           <CardTitle>{title}</CardTitle>
           <CardDescription></CardDescription>
