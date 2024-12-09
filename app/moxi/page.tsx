@@ -2,6 +2,16 @@ import { Container, Title } from "@/components/Typography";
 import Image from "next/image";
 import MoxiImg from "@/public/images/moxi.png";
 import { Instagram } from "@/components/Players/Instagram";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Moxibustione",
+  description:
+    "Il calore per il suo effetto terapeutico è sempre stato usato in medicina",
+  alternates: {
+    canonical: "/moxi",
+  },
+};
 
 function MoxiPage() {
   const videos = ["/p/CL2NtBJq9_K", "/tv/CLREdyTKRoW"];
@@ -31,7 +41,7 @@ function MoxiPage() {
         </p>
       </Container>
 
-      <div className="flex justify-center gap-16 flex-wrap">
+      <div className="flex justify-center gap-16 flex-wrap my-16">
         {videos.map(video => (
           <Instagram key={video} href={video} />
         ))}

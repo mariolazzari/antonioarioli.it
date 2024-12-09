@@ -1,6 +1,6 @@
 {
   "name": "antonioarioli.it",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -10,6 +10,7 @@
     "clean": "rm -rf node_modules & rm -rf .next"
   },
   "dependencies": {
+    "@next/third-parties": "^15.0.4",
     "@radix-ui/react-dialog": "^1.1.2",
     "@radix-ui/react-dropdown-menu": "^2.1.2",
     "@radix-ui/react-separator": "^1.1.0",

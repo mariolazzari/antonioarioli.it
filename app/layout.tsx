@@ -5,38 +5,52 @@ import { Layout } from "@/types/Layout";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ThemeProvider } from "next-themes";
-
+import { GoogleAnalytics } from "@next/third-parties/google";
 export const metadata: Metadata = {
   title: {
-    template: "%s | Antonio Arioli discipline bio",
-    default: "Antonio Arioli discipline bio",
+    default: "Antonio Arioli Discipline Bio",
+    template: `%s | Antonio Arioli Discipline Bio`,
   },
   description:
-    "Antonio Arioli discipline bio Discipline bio naturali, Trattamenti Shiatsu, Riflessologia Plantare",
-  keywords: [
-    "antonio",
-    "arioli",
-    "discipline",
-    "bio",
-    "trattamenti",
-    "shiatsu",
-    "riflessologia",
-    "plantare",
-  ],
+    "Antonio Arioli, Discipline bio naturali, Trattamenti Shiatsu, Riflessologia Plantare, Bergamo, Brescia",
+  keywords:
+    "shiatsu, moxa, trattamenti olistici, benessere, salute, armonia, energy taping, kinesiologia, medicina classica cinese, guarigione, valle brembana, brescia, crescita personale, discipline bio naturali, biodinamica, riflessologia",
+  creator: "Mario Lazzari",
   authors: [
-    {
-      name: "Mario Lazzari",
-      url: "https://mariolazzari.it",
-    },
+    { name: "Antonio Arioli" },
+    { name: "Mario Lazzari", url: "https://mariolazzari.it" },
   ],
+  applicationName: "AntonioArioli",
+  metadataBase: new URL("https://antonioarioli.it"),
   alternates: {
-    canonical: "https://antonioarioli.it",
+    canonical: "/",
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    title: "Antonio Arioli",
+    description: "Antonio Arioli - Discipline Bio",
+    url: "https://antonioarioli.it",
+    siteName: "AntonioArioli",
+    images: [
+      {
+        url: "https://antonioarioli.it/icons/logo.png",
+        width: 512,
+        height: 512,
+      },
+    ],
+    locale: "it",
+    type: "website",
   },
 };
-
 function RootLayout({ children }: Layout) {
   return (
     <html lang="it" suppressHydrationWarning>
+      <head>
+        <GoogleAnalytics gaId="G-VTCTNLCNV5" />
+      </head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

@@ -9,6 +9,7 @@ export function Instagram({ href, width = 350, ...props }: InstagramProps) {
       {...props}
       url={`https://www.instagram.com${href}`}
       width={width}
+      suppressHydrationWarning
     />
   );
 }
