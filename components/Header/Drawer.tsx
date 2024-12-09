@@ -20,14 +20,16 @@ export function Drawer() {
           <Menu size={24} aria-label="Menu" />
         </Button>
       </SheetTrigger>
+
       <SheetContent className="w-64">
         <SheetHeader>
           <Logo isDrawer className="mx-auto my-4 rounded-xl" />
+          <Separator className="h-0.5 bg-muted my-2" />
           <SheetTitle className="font-semibold text-center">
             Antonio Arioli
           </SheetTitle>
           <SheetDescription className="text-center text-md">
-            Discipline Bio
+            Discipline Bio Naturali
           </SheetDescription>
         </SheetHeader>
         <Separator className="h-0.5 bg-muted my-2" />

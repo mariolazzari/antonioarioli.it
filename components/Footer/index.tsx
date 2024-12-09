@@ -9,7 +9,7 @@ export function Footer() {
   return (
     <>
       <Separator className="h-0.5 bg-muted" />
-      <footer className="flex flex-col items-center text-xs gap-0.5">
+      <footer className="flex flex-col items-center text-xs">
         <p>Iscritto al Registro Operatori Discipline Bio Naturali</p>
         <p>Regione Lombardia – L.R. n. 2/2005</p>
         <Link
