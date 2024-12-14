@@ -2,12 +2,13 @@ import { Container, Title } from "@/components/Typography";
 import Image from "next/image";
 import TapImg from "@/public/images/taping.png";
 import { Metadata } from "next";
+import { Paragraph } from "@/components/Typography/Paragraph";
 
 export const metadata: Metadata = {
   title: "Energy Taping",
   description: "Bendaggio adesivo con effetto biomeccanico ed energetico",
   alternates: {
-    canonical: "/taping",
+    canonical: "https://antonioarioli.it/taping",
   },
 };
 
@@ -26,7 +27,7 @@ function TapingPage() {
       />
 
       <Container>
-        <p className="text-justify">
+        <Paragraph>
           L’Energy Taping può essere definito come un bendaggio adesivo con
           effetto biomeccanico ed energetico. Il nastro interagisce con
           l’elasticità della cute e attraverso il movimento ottiene l’effetto
@@ -38,7 +39,7 @@ function TapingPage() {
           sui tre piani: fisico, energetico ed emotivo, estendendo i benefici
           anche all’ambito energetico ed emozionale (sonno disturbato, dolori
           mestruali, disagio emotivo)
-        </p>
+        </Paragraph>
       </Container>
     </>
   );

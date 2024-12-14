@@ -3,7 +3,48 @@ import { CardImage } from "@/components/CardImage";
 import { CardImageProps } from "@/components/CardImage/CardImageProps";
 import { Logo } from "@/components/Logo";
 import { Container } from "@/components/Typography";
+import { Paragraph } from "@/components/Typography/Paragraph";
 import { Quote, FileUser } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: {
+    default: "Antonio Arioli Discipline Bio",
+    template: `%s | Antonio Arioli Discipline Bio`,
+  },
+  description:
+    "Antonio Arioli, Discipline bio naturali, Trattamenti Shiatsu, Riflessologia Plantare, Bergamo, Brescia",
+  keywords:
+    "shiatsu, moxa, trattamenti olistici, benessere, salute, armonia, energy taping, kinesiologia, medicina classica cinese, guarigione, valle brembana, brescia, crescita personale, discipline bio naturali, biodinamica, riflessologia",
+  creator: "Mario Lazzari",
+  authors: [
+    { name: "Antonio Arioli" },
+    { name: "Mario Lazzari", url: "https://mariolazzari.it" },
+  ],
+  applicationName: "AntonioArioli",
+  metadataBase: new URL("https://antonioarioli.it"),
+  alternates: {
+    canonical: "https://antonioarioli.it",
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    title: "Antonio Arioli",
+    description: "Antonio Arioli - Discipline Bio",
+    url: "https://antonioarioli.it",
+    siteName: "AntonioArioli",
+    images: [
+      {
+        url: "https://antonioarioli.it/icons/logo.png",
+        width: 512,
+        height: 512,
+      },
+    ],
+    locale: "it",
+    type: "website",
+  },
+};
 
 function HomePage() {
   const subtitles = [
@@ -88,22 +129,22 @@ function HomePage() {
       </div>
 
       <Container>
-        <p className="text-justify text-md">
+        <Paragraph>
           Aiuto le persone a ritrovare benessere e serenità interiore e fisica
           grazie a tecniche corporee e di rilassamento profondo, introspezione
           guidata e riprogrammazione delle abitudini mentali che permettono di
           accedere al potenziale subconscio, gestire lo stress e superare i
           blocchi emotivi.
-        </p>
+        </Paragraph>
       </Container>
 
       <div className="flex justify-center gap-4 my-4">
-        {buttons.map(b => (
+        {buttons.map(({ label, icon, href }) => (
           <ButtonLink
-            key={b.label}
-            icon={b.icon}
-            label={b.label}
-            href={b.href}
+            key={label}
+            icon={icon}
+            label={label}
+            href={href}
             newTab
           />
         ))}

@@ -3,13 +3,14 @@ import ShiatsuImg from "@/public/images/shiatsu.png";
 import { Metadata } from "next";
 import { Container, Title } from "@/components/Typography";
 import { Video } from "@/components/Players/Video";
+import { Paragraph } from "@/components/Typography/Paragraph";
 
 export const metadata: Metadata = {
   title: "Shiatsu Biodinamico",
   description:
     "Lo shiatsu è una disciplina evolutiva. Non è un massaggio terapeutico, sportivo o estetico.",
   alternates: {
-    canonical: "/shiatsu",
+    canonical: "https://antonioarioli.it/shiatsu",
   },
 };
 
@@ -24,7 +25,7 @@ function ShiatsuPage() {
         priority
       />
       <Container>
-        <p className="text-justify">
+        <Paragraph>
           Lo shiatsu è una disciplina evolutiva. Non è un massaggio terapeutico,
           sportivo o estetico. E’ una relazione in cuil’operatore, attraverso la
           pressione esercitata con mani, gomito o ginocchio su alcuni punti,
@@ -45,14 +46,14 @@ function ShiatsuPage() {
           risorse personali. Genera una migliore qualità della vita qualsiasi
           sia l’età, la condizione e lo stato di benessere/disagio della persona
           coinvolta.
-        </p>
+        </Paragraph>
       </Container>
       <Title>Trattamento meridiano di vescica biliare</Title>
 
       <Video src="https://cloud1.cam.tv/CID071F56/feed/CNT98E13C/video.mp4?t=1635712543" />
 
       <Container>
-        <p className="text-justify">
+        <Paragraph>
           Il punto 1 del meridiano è situato al lato esterno dell’occhio e dopo
           avere percorso tutta la lateralità, termina il suo decorso al quarto
           dito del piede. Questo “fiume del fianco” offre la possibilità di
@@ -63,7 +64,7 @@ function ShiatsuPage() {
           un bambino. Molto efficace nel trattamento di cefalee, fibromialgia e
           dolori articolari. È il meridiano della rinascita, che possiamo
           sentire dentro di noi e vedere nel mondo.
-        </p>
+        </Paragraph>
       </Container>
     </>
   );

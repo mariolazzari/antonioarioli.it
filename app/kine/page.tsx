@@ -2,13 +2,14 @@ import { Container, Subtitle, Title } from "@/components/Typography";
 import { Metadata } from "next";
 import Image from "next/image";
 import KineImg from "@/public/images/kine.png";
+import { Paragraph } from "@/components/Typography/Paragraph";
 
 export const metadata: Metadata = {
   title: "Kinesiologia emozionale",
   description:
     "È una disciplina olistica ed in quanto tale considera la persona nella sua globalità",
   alternates: {
-    canonical: "/kine",
+    canonical: "https://antonioarioli.it/kine",
   },
 };
 
@@ -29,10 +30,10 @@ function KinePage() {
       <Container>
         <>
           <Subtitle>Conosci la kinesiologia emozionale?</Subtitle>
-          <p className="text-justify">
+          <Paragraph>
             La Kinesiologia Emozionale RD è l’arte di indagare nell’inconscio
             per capire cosa sta bloccando un aspetto della tua vita.
-          </p>
+          </Paragraph>
           <p className="mt-4">Considerando i quattro stati:</p>
           <ul className="list-disc list-inside mb-4">
             <li>Struttura/fisico</li>

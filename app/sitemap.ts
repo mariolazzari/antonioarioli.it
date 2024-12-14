@@ -3,7 +3,7 @@ import { MetadataRoute } from "next";
 function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://antonioarioli.it";
   const routes = [
-    "/",
+    "",
     "/bio",
     "/courses",
     "/contacts",

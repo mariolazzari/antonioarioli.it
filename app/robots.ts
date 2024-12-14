@@ -5,7 +5,6 @@ function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      // disallow: "/private/",
     },
     sitemap: "https://antonioarioli.it/sitemap.xml",
   };

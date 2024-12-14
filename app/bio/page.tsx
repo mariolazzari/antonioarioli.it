@@ -1,5 +1,6 @@
 import { Job } from "@/components/Job";
 import { Container, Title } from "@/components/Typography";
+import { Paragraph } from "@/components/Typography/Paragraph";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "L’inizio del mio percorso formativo nell’ambito delle discipline bionaturali fu stimolato alcuni anni fa da un’esperienza personale di ascolto dei segnali con i quali il mio corpo parlava attraverso sintomi che da anni si riproponevano.",
   alternates: {
-    canonical: "/bio",
+    canonical: "https://antonioarioli.it/bio",
   },
 };
 
@@ -75,7 +76,7 @@ function BioPage() {
       <Title>Biografia</Title>
 
       <Container>
-        <p className="text-justify">
+        <Paragraph>
           L’inizio del mio percorso formativo nell’ambito delle discipline
           bionaturali fu stimolato alcuni anni fa da un’esperienza personale di
           ascolto dei segnali con i quali il mio corpo parlava attraverso
@@ -90,7 +91,7 @@ function BioPage() {
           alimentazione. I positivi miglioramenti del mio stato di salute, non
           solo fisica, mi motivarono a proseguire il percorso intrapreso e ad
           iscrivermi, nel 2011, alla scuola professionale di Shiatsu.
-        </p>
+        </Paragraph>
       </Container>
 
       <h3 className="text-3xl font-semibold my-4">Esperienze</h3>

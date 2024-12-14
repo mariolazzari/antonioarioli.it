@@ -12,12 +12,13 @@ import {
 } from "react-icons/fa";
 import { Contact } from "@/components/Contact";
 import { Metadata } from "next";
+import { Title } from "@/components/Typography";
 
 export const metadata: Metadata = {
   title: "Contatti",
   description: "Contatti social Antonio Arioli",
   alternates: {
-    canonical: "/contacts",
+    canonical: "https://antonioarioli.it/contacts",
   },
 };
 
@@ -83,9 +84,7 @@ function LinksPage() {
 
   return (
     <div className="p-8">
-      <h2 className="text-3xl font-semibold mb-8 text-center">
-        I miei contatti
-      </h2>
+      <Title>I miei contatti</Title>
 
       <div className="flex justify-center items-center flex-wrap p-8 gap-16">
         {contacts.map(c => (

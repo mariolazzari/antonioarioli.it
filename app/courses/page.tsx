@@ -1,3 +1,4 @@
+import { Title } from "@/components/Typography";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,7 +7,7 @@ export const metadata: Metadata = {
   title: "Corsi",
   description: "Corsi sostenuti da Antonio Arioli",
   alternates: {
-    canonical: "/courses",
+    canonical: "https://antonioarioli.it/courses",
   },
 };
 
@@ -56,7 +57,7 @@ function CoursesPage() {
 
   return (
     <div className="p-8">
-      <h2 className="text-3xl text-center font-bold mb-8">Corsi frequentati</h2>
+      <Title>Corsi frequentati</Title>
 
       <div className="flex justify-center items-center flex-wrap gap-16">
         {images.map(img => (

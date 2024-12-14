@@ -3,13 +3,14 @@ import Image from "next/image";
 import MoxiImg from "@/public/images/moxi.png";
 import { Instagram } from "@/components/Players/Instagram";
 import { Metadata } from "next";
+import { Paragraph } from "@/components/Typography/Paragraph";
 
 export const metadata: Metadata = {
   title: "Moxibustione",
   description:
     "Il calore per il suo effetto terapeutico è sempre stato usato in medicina",
   alternates: {
-    canonical: "/moxi",
+    canonical: "https://antonioarioli.it/moxi",
   },
 };
 
@@ -30,7 +31,7 @@ function MoxiPage() {
       />
 
       <Container>
-        <p className="text-justify">
+        <Paragraph>
           Il calore per il suo effetto terapeutico è sempre stato usato ed è
           tuttora usato anche nella nostra medicina. La moxibustione è una forma
           di utilizzo del calore al fine di cura, che si applica a zone molto
@@ -38,7 +39,7 @@ function MoxiPage() {
           trattamento di tutte le patologie dominate dal freddo e
           dall&apos;umidità (stati di raffreddamento). Esistono vari stili di
           moxa, basati sull’uso dell’artemisia.
-        </p>
+        </Paragraph>
       </Container>
 
       <div className="flex justify-center gap-16 flex-wrap my-16">
