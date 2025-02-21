@@ -5,6 +5,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ThemeProvider } from "next-themes";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { Cookies } from "@/components/Cookies";
 
 function RootLayout({ children }: Layout) {
   return (
@@ -22,6 +23,7 @@ function RootLayout({ children }: Layout) {
             {children}
           </main>
           <Footer />
+          <Cookies />
         </ThemeProvider>
       </body>
     </html>
