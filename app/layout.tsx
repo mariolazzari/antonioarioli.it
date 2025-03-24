@@ -4,14 +4,15 @@ import { Layout } from "@/types/Layout";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ThemeProvider } from "next-themes";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { Cookies } from "@/components/Cookies";
 
 function RootLayout({ children }: Layout) {
   return (
     <html lang="it" suppressHydrationWarning>
       <head>
-        <GoogleTagManager gtmId="GTM-TLN8L5B" />
+        <GoogleAnalytics gaId="G-VTCTNLCNV5" />
+        <GoogleTagManager gtmId="GTM-KZGQ4ZQ" />
       </head>
 
       <body
