@@ -1,5 +1,5 @@
-import { Separator } from "@radix-ui/react-separator";
 import { ThemeToggle } from "../Theme/ThemeToggle";
+import { Separator } from "../ui/separator";
 import { Drawer } from "./Drawer";
 import { Links } from "./Links";
 
