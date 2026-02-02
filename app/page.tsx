@@ -4,7 +4,7 @@ import { CardImageProps } from "@/components/CardImage/CardImageProps";
 import { Logo } from "@/components/Logo";
 import { Container } from "@/components/Typography";
 import { Paragraph } from "@/components/Typography/Paragraph";
-import { Quote, FileUser } from "lucide-react";
+import { Quote, FileUser, GraduationCap } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -115,7 +115,7 @@ function HomePage() {
     <>
       <Logo className="rounded-3xl mx-auto my-8" />
 
-      <div className="text-center">
+      <div className="text-center my-4">
         <h1 className="text-4xl font-bold mb-4 text-primary">Antonio Arioli</h1>
 
         {subtitles.map(st => (
@@ -138,7 +138,7 @@ function HomePage() {
         </Paragraph>
       </Container>
 
-      <div className="flex justify-center gap-4 my-4">
+      <div className="flex justify-center gap-4 my-8">
         {buttons.map(({ label, icon, href }) => (
           <ButtonLink
             key={label}
@@ -148,6 +148,18 @@ function HomePage() {
             newTab
           />
         ))}
+      </div>
+
+      <div className="flex flex-col items-center my-8 gap-8 font-semibold">
+        <h2 className="text-3xl text-center text-primary">
+          La mia tesi del master in
+        </h2>
+        <ButtonLink
+          icon={<GraduationCap />}
+          label="Ipnosi"
+          href="/pdf/brochure.pdf"
+          newTab
+        />
       </div>
 
       <div className="flex justify-center items-center gap-24 flex-wrap my-8">

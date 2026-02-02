@@ -12,7 +12,7 @@ export function ButtonLink({
 
   return (
     <Link key={href} href={href} target={target}>
-      <Button className="font-semibold" aria-label={label}>
+      <Button className="font-semibold w-32" aria-label={label}>
         {icon} {label}
       </Button>
     </Link>
