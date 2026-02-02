@@ -150,7 +150,7 @@ function HomePage() {
         ))}
       </div>
 
-      <div className="flex flex-col items-center my-8 gap-8 font-semibold">
+      <div className="flex flex-col items-center my-8 gap-4 font-semibold">
         <h2 className="text-3xl text-center text-primary">
           La mia tesi del master in
         </h2>
