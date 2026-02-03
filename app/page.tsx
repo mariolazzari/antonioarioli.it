@@ -4,7 +4,7 @@ import { CardImageProps } from "@/components/CardImage/CardImageProps";
 import { Logo } from "@/components/Logo";
 import { Container } from "@/components/Typography";
 import { Paragraph } from "@/components/Typography/Paragraph";
-import { Quote, FileUser, GraduationCap } from "lucide-react";
+import { Quote, FileUser, Eye } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -55,8 +55,8 @@ function HomePage() {
 
   const buttons = [
     {
-      label: "Referenze",
-      href: "https://www.google.com/search?cs=0&output=search&q=Antonio+Arioli+Shiatsu+Riflessologia+Plantare",
+      label: "Testimonianze",
+      href: "https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MjMwNzg4MzcyMjI3MzM5?igsh=cmZubTNkbjUzMXF0",
       icon: <Quote size={32} />,
     },
     {
@@ -155,9 +155,9 @@ function HomePage() {
           La mia tesi del master in
         </h2>
         <ButtonLink
-          icon={<GraduationCap />}
+          icon={<Eye />}
           label="Ipnosi"
-          href="/pdf/brochure.pdf"
+          href="/pdf/ipnosi.pdf"
           newTab
         />
       </div>
