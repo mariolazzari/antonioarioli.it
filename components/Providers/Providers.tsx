@@ -2,6 +2,7 @@ import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
 import { PropsWithChildren } from "react";
 import { SidebarProvider } from "../ui/sidebar";
 import { ThemeProvider } from "./ThemeProvider";
+import { TooltipProvider } from "../ui/tooltip";
 
 export function Providers({ children }: PropsWithChildren) {
   return (
@@ -15,7 +16,9 @@ export function Providers({ children }: PropsWithChildren) {
         enableSystem
         disableTransitionOnChange
       >
-        <SidebarProvider>{children}</SidebarProvider>
+        <TooltipProvider>
+          <SidebarProvider>{children}</SidebarProvider>
+        </TooltipProvider>
       </ThemeProvider>
     </>
   );
