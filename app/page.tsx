@@ -1,72 +1,17 @@
-import { ButtonLink } from "@/components/ButtonLink";
-import { CardImage } from "@/components/CardImage";
-import { CardImageProps } from "@/components/CardImage/CardImageProps";
-import { Logo } from "@/components/Logo";
-import { Container } from "@/components/Typography";
-import { Paragraph } from "@/components/Typography/Paragraph";
-import { Quote, FileUser, Eye } from "lucide-react";
-import { Metadata } from "next";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Eye } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
-export const metadata: Metadata = {
-  title: {
-    default: "Antonio Arioli Discipline Bio",
-    template: `%s | Antonio Arioli Discipline Bio`,
-  },
-  description:
-    "Antonio Arioli, Discipline bio naturali, Trattamenti Shiatsu, Riflessologia Plantare, Bergamo, Brescia",
-  keywords:
-    "shiatsu, moxa, trattamenti olistici, benessere, salute, armonia, energy taping, kinesiologia, medicina classica cinese, guarigione, valle brembana, brescia, crescita personale, discipline bio naturali, biodinamica, riflessologia",
-  creator: "Mario Lazzari",
-  authors: [
-    { name: "Antonio Arioli" },
-    { name: "Mario Lazzari", url: "https://mariolazzari.it" },
-  ],
-  applicationName: "AntonioArioli",
-  metadataBase: new URL("https://antonioarioli.it"),
-  alternates: {
-    canonical: "https://antonioarioli.it",
-  },
-  icons: {
-    icon: "/favicon.ico",
-  },
-  openGraph: {
-    title: "Antonio Arioli",
-    description: "Antonio Arioli - Discipline Bio",
-    url: "https://antonioarioli.it",
-    siteName: "AntonioArioli",
-    images: [
-      {
-        url: "https://antonioarioli.it/icons/logo.png",
-        width: 512,
-        height: 512,
-      },
-    ],
-    locale: "it",
-    type: "website",
-  },
-};
-
-function HomePage() {
-  const subtitles = [
-    "Discipline Bio Naturali",
-    "Trattamenti Shiatsu",
-    "Riflessologia Plantare",
-  ];
-
-  const buttons = [
-    {
-      label: "Testimonianze",
-      href: "https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MjMwNzg4MzcyMjI3MzM5?igsh=cmZubTNkbjUzMXF0",
-      icon: <Quote size={32} />,
-    },
-    {
-      label: "Brochure",
-      href: "/pdf/brochure.pdf",
-      icon: <FileUser size={32} />,
-    },
-  ];
-
-  const cards: CardImageProps[] = [
+export default function Home() {
+  const cards = [
     {
       title: "Shiatsu biodinamico",
       description:
@@ -112,63 +57,82 @@ function HomePage() {
   ];
 
   return (
-    <>
-      <Logo className="rounded-3xl mx-auto my-8" />
+    <div className="flex flex-col items-center">
+      <Image
+        className="rounded-full mb-4"
+        src="/images/logo.png"
+        width={200}
+        height={200}
+        alt="Antonio Arioli"
+        priority
+      />
 
-      <div className="text-center my-4">
-        <h1 className="text-4xl font-bold mb-4 text-primary">Antonio Arioli</h1>
+      <h1 className="text-5xl text-primary font-extrabold text-center">
+        Antonio Arioli
+      </h1>
+      <h2 className="text-3xl text-primary font-bold">
+        Discipline Bio Naturali
+      </h2>
+      <h3 className="text-2xl text-primary font-semibold mt-2">
+        Trattamenti Shiatsu
+      </h3>
+      <h3 className="text-2xl text-primary font-semibold mb-2">
+        Riflessologia Plantare
+      </h3>
+      <p className="text-justify max-w-xl p-8 my-4">
+        Aiuto le persone a ritrovare benessere e serenità interiore e fisica
+        grazie a tecniche corporee e di rilassamento profondo, introspezione
+        guidata e riprogrammazione delle abitudini mentali che permettono di
+        accedere al potenziale subconscio, gestire lo stress e superare i
+        blocchi emotivi. Testimonianze
+      </p>
 
-        {subtitles.map(st => (
-          <h2
-            key={st.substring(4)}
-            className="text-3xl font-semibold text-center mb-1"
-          >
-            {st}
-          </h2>
+      <div className="flex gap-4 px-8">
+        <Button className="text-primary w-36 cursor-pointer" variant="outline">
+          Testimonianze
+        </Button>
+        <Button className="text-primary w-36 cursor-pointer" variant="outline">
+          Brochure
+        </Button>
+      </div>
+
+      <div className="flex flex-col items-center gap-4 p-4 my-4">
+        <p className="text-center text-primary">La mia tesi del master in</p>
+        <Button className="text-primary w-36 cursor-pointer" variant="outline">
+          <Eye /> Ipnosi
+        </Button>
+      </div>
+
+      <div className="flex justify-center items-center gap-8 flex-wrap pb-8">
+        {cards.map(({ title, description, imagePath, href }) => (
+          <Link key={href} href={href}>
+            <Card className="p-0">
+              <Image
+                src={imagePath}
+                alt="Event cover"
+                className="rounded-t-xl"
+                width={350}
+                height={250}
+              />
+              <CardHeader>
+                <CardTitle className="text-primary font-semibold">
+                  {title}
+                </CardTitle>
+                <CardDescription>{description}</CardDescription>
+              </CardHeader>
+
+              <CardFooter className="pb-4">
+                <Button
+                  className="mx-auto text-primary cursor-pointer"
+                  variant="outline"
+                >
+                  Dettagli
+                </Button>
+              </CardFooter>
+            </Card>
+          </Link>
         ))}
       </div>
-
-      <Container>
-        <Paragraph>
-          Aiuto le persone a ritrovare benessere e serenità interiore e fisica
-          grazie a tecniche corporee e di rilassamento profondo, introspezione
-          guidata e riprogrammazione delle abitudini mentali che permettono di
-          accedere al potenziale subconscio, gestire lo stress e superare i
-          blocchi emotivi.
-        </Paragraph>
-      </Container>
-
-      <div className="flex justify-center gap-4 my-8">
-        {buttons.map(({ label, icon, href }) => (
-          <ButtonLink
-            key={label}
-            icon={icon}
-            label={label}
-            href={href}
-            newTab
-          />
-        ))}
-      </div>
-
-      <div className="flex flex-col items-center my-8 gap-4 font-semibold">
-        <h2 className="text-3xl text-center text-primary">
-          La mia tesi del master in
-        </h2>
-        <ButtonLink
-          icon={<Eye />}
-          label="Ipnosi"
-          href="/pdf/ipnosi.pdf"
-          newTab
-        />
-      </div>
-
-      <div className="flex justify-center items-center gap-24 flex-wrap my-8">
-        {cards.map(card => (
-          <CardImage key={card.title} {...card} />
-        ))}
-      </div>
-    </>
+    </div>
   );
 }
-
-export default HomePage;
