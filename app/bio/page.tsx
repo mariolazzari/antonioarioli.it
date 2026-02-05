@@ -1,3 +1,4 @@
+import { LinkButton } from "@/components/Buttons";
 import {
   Card,
   CardContent,
@@ -78,7 +79,7 @@ const BiographyPage = () => {
   ].reverse();
 
   return (
-    <div className="p-8">
+    <div className="p-12">
       <h2 className="text-4xl font-semibold text-primary text-center mb-8">
         Biografia
       </h2>
@@ -118,7 +119,7 @@ const BiographyPage = () => {
             <CardContent className="h-20">
               <p className="text-justify text-sm">{job.text}</p>
             </CardContent>
-            <CardFooter></CardFooter>
+            <CardFooter>{job.pdf && <LinkButton href={job.pdf} />}</CardFooter>
           </Card>
         ))}
       </div>

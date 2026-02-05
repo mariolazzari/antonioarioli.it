@@ -15,14 +15,8 @@ import Image from "next/image";
 import { Separator } from "../ui/separator";
 import { cn } from "@/lib/utils";
 import { Footer } from "../Footer";
-import {
-  ChevronDown,
-  GraduationCap,
-  Home,
-  Link2,
-  User,
-  CircleDot,
-} from "lucide-react";
+import { ChevronDown, GraduationCap, Home, Link2, User } from "lucide-react";
+import { GiYinYang } from "react-icons/gi";
 import Link from "next/link";
 import {
   Collapsible,
@@ -37,7 +31,7 @@ export function AppSidebar() {
     { title: "Home", href: "/", icon: <Home /> },
     { title: "Biografia", href: "/bio", icon: <User /> },
     { title: "Corsi", href: "/courses", icon: <GraduationCap /> },
-    { title: "Contatti", href: "/links", icon: <Link2 /> },
+    { title: "Contatti", href: "/contacts", icon: <Link2 /> },
   ];
 
   const treats = [
@@ -76,32 +70,34 @@ export function AppSidebar() {
 
       <SidebarContent>
         <SidebarGroup>
-          {links.map(({ href, title, icon }) => (
-            <Link key={href} href={href}>
-              <SidebarMenuItem>
-                <SidebarMenuButton>
-                  {icon} <span>{title}</span>
-                </SidebarMenuButton>
-              </SidebarMenuItem>
-            </Link>
-          ))}
+          <SidebarMenu className="capitalize">
+            {links.map(({ href, title, icon }) => (
+              <Link key={href} href={href}>
+                <SidebarMenuItem>
+                  <SidebarMenuButton>
+                    {icon} <span>{title}</span>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+              </Link>
+            ))}
+          </SidebarMenu>
         </SidebarGroup>
 
         <SidebarGroup>
           <Collapsible defaultOpen>
             <SidebarGroupLabel asChild>
-              <CollapsibleTrigger className="capitalize">
+              <CollapsibleTrigger>
                 Trattamenti
                 <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
               </CollapsibleTrigger>
             </SidebarGroupLabel>
             <CollapsibleContent>
-              <SidebarMenu className="capitalize">
+              <SidebarMenu>
                 {treats.map(t => (
                   <SidebarMenuItem key={t.href}>
                     <SidebarMenuButton asChild>
                       <Link href={t.href}>
-                        <CircleDot />
+                        <GiYinYang className="text-primary" />
                         <span>{t.title}</span>
                       </Link>
                     </SidebarMenuButton>
