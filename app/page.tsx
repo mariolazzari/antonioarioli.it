@@ -79,7 +79,7 @@ export default function Home() {
       <h3 className="text-2xl text-primary font-semibold mb-2">
         Riflessologia Plantare
       </h3>
-      <p className="text-justify max-w-xl p-8 my-4">
+      <p className="text-justify max-w-xl px-8">
         Aiuto le persone a ritrovare benessere e serenità interiore e fisica
         grazie a tecniche corporee e di rilassamento profondo, introspezione
         guidata e riprogrammazione delle abitudini mentali che permettono di
@@ -87,23 +87,16 @@ export default function Home() {
         blocchi emotivi. Testimonianze
       </p>
 
-      <div className="flex gap-4 px-8">
+      <div className="flex gap-4 px-8 py-16">
         <Button className="text-primary w-36 cursor-pointer" variant="outline">
           Testimonianze
         </Button>
-        <Button className="text-primary w-36 cursor-pointer" variant="outline">
-          Brochure
-        </Button>
-      </div>
-
-      <div className="flex flex-col items-center gap-4 p-4 my-4">
-        <p className="text-center text-primary">La mia tesi del master in</p>
         <Button className="text-primary w-36 cursor-pointer" variant="outline">
           <Eye /> Ipnosi
         </Button>
       </div>
 
-      <div className="flex justify-center items-center gap-8 flex-wrap pb-8">
+      <div className="flex justify-center items-center gap-8 flex-wrap pb-16">
         {cards.map(({ title, description, imagePath, href }) => (
           <Link key={href} href={href}>
             <Card className="p-0">
