@@ -1,6 +1,5 @@
 import {
   FaFacebook,
-  FaFilePdf,
   FaInstagram,
   FaLinkedin,
   FaTv,
@@ -67,11 +66,6 @@ function ContactsPage() {
       url: "https://www.cam.tv/antonioarioli",
     },
     {
-      icon: <FaFilePdf size={64} />,
-      title: "La mia locandina",
-      url: "arioli.pdf",
-    },
-    {
       icon: <FaUser size={64} />,
       title: "Il mio profilo su Riabilita",
       url: "https://www.riabilita-serina.it/staff/antonio-arioli",
@@ -89,7 +83,7 @@ function ContactsPage() {
   ];
 
   return (
-    <div className="p-8">
+    <div className="px-8">
       <h2 className="text-4xl text-center text-primary font-semibold">
         Contatti
       </h2>

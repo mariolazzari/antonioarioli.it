@@ -3,7 +3,7 @@ import "./globals.css";
 import { AppSidebar } from "@/components/AppSidebar";
 import { Layout } from "@/types/Layout";
 import { Providers } from "@/components/Providers";
-import { Appbar } from "@/components/Appbar/Appbar";
+import { Appbar } from "@/components/Appbar";
 import { classFonts } from "./fonts";
 import { WhatsApp } from "@/components/Buttons/WhatsAppButton";
 

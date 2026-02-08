@@ -18,6 +18,15 @@ function ReflexPage() {
         Riflessologia plantare
       </h2>
 
+      <Image
+        className="mx-auto my-8"
+        src={ReflexImg}
+        alt="reflex"
+        width={350}
+        height={250}
+        priority
+      />
+
       <p className="max-w-xl mx-auto text-justify px-8 md:p-0">
         La parola riflesso richiama la parola specchio: come in uno specchio,
         nel piede troviamo punti o zone che corrispondono a precise parti o
@@ -26,15 +35,6 @@ function ReflexPage() {
         queste zone per alleviare dolori e tensioni, per ripristinare una sana
         vitalità e favorire un benessere fisico, psichico, emozionale.
       </p>
-
-      <Image
-        className="mx-auto mt-8"
-        src={ReflexImg}
-        alt="reflex"
-        width={350}
-        height={250}
-        priority
-      />
 
       <Instagram className="mx-auto my-8" href="/p/Cj8cY6RAI_1" />
     </>

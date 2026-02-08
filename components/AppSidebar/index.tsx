@@ -19,9 +19,9 @@ import {
   ChevronDown,
   GraduationCap,
   Home,
-  Link2,
   User,
   CalendarDays,
+  AtSign,
 } from "lucide-react";
 import { GiYinYang } from "react-icons/gi";
 import Link from "next/link";
@@ -39,7 +39,7 @@ export function AppSidebar() {
     { title: "Biografia", href: "/bio", icon: <User /> },
     { title: "Esperienze", href: "/exp", icon: <CalendarDays /> },
     { title: "Corsi", href: "/courses", icon: <GraduationCap /> },
-    { title: "Contatti", href: "/contacts", icon: <Link2 /> },
+    { title: "Contatti", href: "/contacts", icon: <AtSign /> },
   ];
 
   const treats = [

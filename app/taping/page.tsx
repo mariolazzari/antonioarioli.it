@@ -1,10 +1,9 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import ReflexImg from "@/public/images/reflex.png";
-import { Instagram } from "@/components/Players";
+import TapingImg from "@/public/images/taping.png";
 
 export const metadata: Metadata = {
-  title: "Riflessologia plantare",
+  title: "Energing Taping",
   description: "La parola riflesso richiama la parola specchio",
   alternates: {
     canonical: "https://antonioarioli.it/reflex",
@@ -15,28 +14,31 @@ function TapingPage() {
   return (
     <>
       <h2 className="text-4xl text-primary text-center font-semibold">
-        Riflessologia plantare
+        Energy Taping
       </h2>
 
       <Image
         className="mx-auto mt-8"
-        src={ReflexImg}
-        alt="reflex"
+        src={TapingImg}
+        alt="energy taping"
         width={350}
         height={250}
         priority
       />
 
       <p className="max-w-xl text-justify mx-auto my-8 p-8 md:p-0">
-        La parola riflesso richiama la parola specchio: come in uno specchio,
-        nel piede troviamo punti o zone che corrispondono a precise parti o
-        funzioni del nostro corpo. Questi punti e zone segnalano come sta il
-        nostro interno. Attraverso precise pressioni è possibile stimolare
-        queste zone per alleviare dolori e tensioni, per ripristinare una sana
-        vitalità e favorire un benessere fisico, psichico, emozionale.
+        L’Energy Taping può essere definito come un bendaggio adesivo con
+        effetto biomeccanico ed energetico. Il nastro interagisce con
+        l’elasticità della cute e attraverso il movimento ottiene l’effetto
+        terapeutico desiderato. Questa tecnica, come nel Taping Classico, aiuta
+        la funzionalità muscolare e articolare, ma si differenzia nello
+        stimolare anche il flusso nei meridiani, gli stessi canali energetici
+        usati in Agopuntura. Oltre ad essere un valido metodo di cura, è anche
+        un efficace supporto attivo al benessere operando contemporaneamente sui
+        tre piani: fisico, energetico ed emotivo, estendendo i benefici anche
+        all’ambito energetico ed emozionale (sonno disturbato, dolori mestruali,
+        disagio emotivo)
       </p>
-
-      <Instagram className="my-8 mx-auto" href="/p/Cj8cY6RAI_1" />
     </>
   );
 }

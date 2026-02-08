@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Eye } from "lucide-react";
+import { Eye, MessageCircleMore } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -88,12 +88,23 @@ export default function Home() {
       </p>
 
       <div className="flex gap-4 px-8 py-16">
-        <Button className="text-primary w-36 cursor-pointer" variant="outline">
-          Testimonianze
-        </Button>
-        <Button className="text-primary w-36 cursor-pointer" variant="outline">
-          <Eye /> Ipnosi
-        </Button>
+        <Link
+          href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MjMwNzg4MzcyMjI3MzM5?igsh=cmZubTNkbjUzMXF0"
+          target="_blank"
+        >
+          <Button className="w-36 cursor-pointer">
+            <MessageCircleMore /> Testimonianze
+          </Button>
+        </Link>
+
+        <Link href="/pdf/ipnosi.pdf" target="_blank">
+          <Button
+            className="text-primary w-36 cursor-pointer"
+            variant="outline"
+          >
+            <Eye /> Ipnosi
+          </Button>
+        </Link>
       </div>
 
       <div className="flex justify-center items-center gap-8 flex-wrap pb-16">
