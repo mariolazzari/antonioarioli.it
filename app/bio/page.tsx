@@ -1,13 +1,3 @@
-import { LinkButton } from "@/components/Buttons";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { GraduationCap, FileText } from "lucide-react";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -48,7 +38,7 @@ const BiographyPage = () => {
   ];
 
   return (
-    <div className="p-8 space-y-4">
+    <div className="px-8 pb-12 space-y-4">
       <h2 className="text-4xl font-semibold text-primary text-center mb-8">
         Biografia
       </h2>

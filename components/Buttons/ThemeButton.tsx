@@ -44,6 +44,7 @@ export function ThemeButton() {
           className="text-primary cursor-pointer"
           variant="ghost"
           size="icon"
+          aria-label="Selected theme"
         >
           {renderIcon()}
         </Button>

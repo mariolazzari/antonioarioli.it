@@ -8,6 +8,15 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { FileText, GraduationCap } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Esperienze",
+  description: "Esperienze sostenute da Antonio Arioli",
+  alternates: {
+    canonical: "https://antonioarioli.it/exp",
+  },
+};
 
 function ExperiencePage() {
   const jobs = [
@@ -69,11 +78,11 @@ function ExperiencePage() {
   ].reverse();
 
   return (
-    <div>
-      <h2 className="text-4xl font-semibold text-primary text-center my-12">
+    <>
+      <h2 className="text-4xl font-semibold text-primary text-center mb-12">
         Esperienze
       </h2>
-      <div className="flex justify-center items-center flex-wrap gap-8">
+      <div className="flex justify-center items-center flex-wrap gap-8 pb-12">
         {jobs.map((job, id) => (
           <Card key={`${job.title}_${id}`} className="w-72">
             <CardHeader>
@@ -93,7 +102,7 @@ function ExperiencePage() {
           </Card>
         ))}
       </div>
-    </div>
+    </>
   );
 }
 

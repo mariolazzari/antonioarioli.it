@@ -11,6 +11,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
+  const titles = [
+    "Trattamenti Shiatsu",
+    "Riflessologia Plantare",
+    "Kinesiologia Emozionale",
+    "Ipnosi",
+  ];
+
   const cards = [
     {
       title: "Shiatsu biodinamico",
@@ -70,16 +77,20 @@ export default function Home() {
       <h1 className="text-5xl text-primary font-extrabold text-center">
         Antonio Arioli
       </h1>
-      <h2 className="text-3xl text-primary font-bold">
+      <h2 className="text-3xl text-primary font-bold mb-2">
         Discipline Bio Naturali
       </h2>
-      <h3 className="text-2xl text-primary font-semibold mt-2">
-        Trattamenti Shiatsu
-      </h3>
-      <h3 className="text-2xl text-primary font-semibold mb-2">
-        Riflessologia Plantare
-      </h3>
-      <p className="text-justify max-w-xl px-8">
+
+      {titles.map((title, id) => (
+        <h3
+          key={`htitle-${id}`}
+          className="text-2xl text-primary font-semibold"
+        >
+          {title}
+        </h3>
+      ))}
+
+      <p className="text-justify max-w-xl px-8 mt-8">
         Aiuto le persone a ritrovare benessere e serenità interiore e fisica
         grazie a tecniche corporee e di rilassamento profondo, introspezione
         guidata e riprogrammazione delle abitudini mentali che permettono di
@@ -87,7 +98,7 @@ export default function Home() {
         blocchi emotivi. Testimonianze
       </p>
 
-      <div className="flex gap-4 px-8 py-16">
+      <div className="flex gap-4 px-8 my-8">
         <Link
           href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MjMwNzg4MzcyMjI3MzM5?igsh=cmZubTNkbjUzMXF0"
           target="_blank"

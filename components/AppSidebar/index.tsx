@@ -32,7 +32,7 @@ import {
 } from "../ui/collapsible";
 
 export function AppSidebar() {
-  const { open } = useSidebar();
+  const { open, setOpenMobile, isMobile } = useSidebar();
 
   const links = [
     { title: "Home", href: "/", icon: <Home /> },
@@ -50,6 +50,13 @@ export function AppSidebar() {
     { title: "Energy taping", href: "/taping" },
     { title: "Kinesiologia emozionale", href: "/kine" },
   ];
+
+  const onMobileClick = () => {
+    // Only trigger on mobile view
+    if (isMobile) {
+      setOpenMobile(false);
+    }
+  };
 
   return (
     <Sidebar collapsible="icon">
@@ -80,7 +87,7 @@ export function AppSidebar() {
         <SidebarGroup>
           <SidebarMenu className="capitalize">
             {links.map(({ href, title, icon }) => (
-              <Link key={href} href={href}>
+              <Link key={href} href={href} onClick={onMobileClick}>
                 <SidebarMenuItem>
                   <SidebarMenuButton>
                     {icon} <span>{title}</span>
@@ -104,7 +111,7 @@ export function AppSidebar() {
                 {treats.map(t => (
                   <SidebarMenuItem key={t.href}>
                     <SidebarMenuButton asChild>
-                      <Link href={t.href}>
+                      <Link href={t.href} onClick={onMobileClick}>
                         <GiYinYang className="text-primary" />
                         <span>{t.title}</span>
                       </Link>

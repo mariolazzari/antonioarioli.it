@@ -15,6 +15,7 @@ export function LinkButton({ href, className = "" }: Props) {
         className={cn("cursor-pointer text-primary", className)}
         variant="ghost"
         size="icon"
+        aria-label={href}
       >
         <LinkIcon />
       </Button>

@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
 import "./globals.css";
+import type { Metadata } from "next";
 import { AppSidebar } from "@/components/AppSidebar";
 import { Layout } from "@/types/Layout";
 import { Providers } from "@/components/Providers";
 import { Appbar } from "@/components/Appbar";
 import { classFonts } from "./fonts";
-import { WhatsApp } from "@/components/Buttons/WhatsAppButton";
+import { WhatsApp } from "@/components/Buttons";
 
 export const metadata: Metadata = {
   title: {
@@ -13,9 +13,9 @@ export const metadata: Metadata = {
     template: `%s | Antonio Arioli Discipline Bio`,
   },
   description:
-    "Antonio Arioli, Discipline bio naturali, Trattamenti Shiatsu, Riflessologia Plantare, Bergamo, Brescia",
+    "Antonio Arioli, Discipline bio naturali, Trattamenti Shiatsu, Riflessologia Plantare, Kinesiologia emozionale, ipnosi, Bergamo, Brescia",
   keywords:
-    "shiatsu, moxa, trattamenti olistici, benessere, salute, armonia, energy taping, kinesiologia, medicina classica cinese, guarigione, valle brembana, brescia, crescita personale, discipline bio naturali, biodinamica, riflessologia",
+    "shiatsu, moxa, trattamenti olistici, benessere, salute, armonia, energy taping, kinesiologia, medicina classica cinese, guarigione, valle brembana, brescia, crescita personale, discipline bio naturali, biodinamica, riflessologia, ipnosi",
   creator: "Mario Lazzari",
   authors: [
     { name: "Antonio Arioli" },
