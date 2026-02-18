@@ -19,8 +19,8 @@ const BiographyPage = () => {
         volesse comunicarmi attraverso i sintomi, allargando così la
         prospettiva: il sintomo come messaggio da leggere e interpretare per
         evolvere, anziché un disturbo casuale da sedare o rimuovere.`,
-    `Mi rivolsi così ad un operatore da cui ricevetti trattamenti shiatsu. 
-      Contemporaneamente intrapresi alcuni percorsi volti al benessere spirituale delle persone 
+    `Mi rivolsi così ad un operatore da cui ricevetti trattamenti shiatsu.
+      Contemporaneamente intrapresi alcuni percorsi volti al benessere spirituale delle persone
       e introdussi alcuni cambiamenti nella mia alimentazione.`,
     "I positivi miglioramenti del mio stato di salute, non solo fisica, mi motivarono a proseguire il percorso intrapreso e ad iscrivermi, nel 2011, alla scuola professionale di Shiatsu.",
     "Già dal primo anno del triennio di formazione iniziai a praticare.",

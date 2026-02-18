@@ -39,15 +39,11 @@ export function ThemeButton() {
 
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button
-          className="text-primary cursor-pointer"
-          variant="ghost"
-          size="icon"
-          aria-label="Selected theme"
-        >
-          {renderIcon()}
-        </Button>
+      <DropdownMenuTrigger
+        className="flex items-center gap-1 -ml-1"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {renderIcon()} Tema
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">{renderButtons()}</DropdownMenuContent>
     </DropdownMenu>

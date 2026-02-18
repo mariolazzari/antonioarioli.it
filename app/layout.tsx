@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import { AppSidebar } from "@/components/AppSidebar";
 import { Layout } from "@/types/Layout";
 import { Providers } from "@/components/Providers";
-import { Appbar } from "@/components/Appbar";
 import { classFonts } from "./fonts";
 import { WhatsApp } from "@/components/Buttons";
+import { SidebarTrigger } from "@/components/ui/sidebar";
 
 export const metadata: Metadata = {
   title: {
@@ -52,12 +52,10 @@ function RootLayout({ children }: Layout) {
       <body className={classFonts}>
         <Providers>
           <AppSidebar />
-          <div className="flex flex-col w-full overflow-y-auto">
-            <Appbar />
-            <main className="h-[calc(100dvh-50px)] overflow-y-auto">
-              {children}
-            </main>
-          </div>
+          <main className="h-screen overflow-y-auto py-4">
+            <SidebarTrigger className="md:hidden absolute top-2 left-2" />
+            {children}
+          </main>
         </Providers>
         <WhatsApp />
       </body>
