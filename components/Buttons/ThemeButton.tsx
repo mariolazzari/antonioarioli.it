@@ -14,9 +14,9 @@ export function ThemeButton() {
 
   const renderButtons = () => {
     return [
-      { label: "Chiaro", value: "light", icon: <Sun /> },
-      { label: "Scuro", value: "dark", icon: <Moon /> },
-      { label: "Sistema", value: "system", icon: <SunMoon /> },
+      { label: "Chiaro", value: "light", icon: <Sun size={16} /> },
+      { label: "Scuro", value: "dark", icon: <Moon size={16} /> },
+      { label: "Sistema", value: "system", icon: <SunMoon size={16} /> },
     ].map(({ label, value, icon }) => (
       <DropdownMenuItem key={value} onClick={() => setTheme(value)}>
         {icon} {label}
@@ -27,23 +27,23 @@ export function ThemeButton() {
   const renderIcon = () => {
     switch (theme) {
       case "light":
-        return <Sun />;
+        return <Sun size={16} />;
 
       case "dark":
-        return <Moon />;
+        return <Moon size={16} />;
 
       default:
-        return <SunMoon />;
+        return <SunMoon size={16} />;
     }
   };
 
   return (
     <DropdownMenu>
       <DropdownMenuTrigger
-        className="flex items-center gap-1 -ml-1"
+        className="flex items-center gap-2 "
         onClick={(e) => e.stopPropagation()}
       >
-        {renderIcon()} Tema
+        {renderIcon()} <span className="">Tema</span>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">{renderButtons()}</DropdownMenuContent>
     </DropdownMenu>
