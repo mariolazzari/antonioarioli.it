@@ -52,7 +52,7 @@ function RootLayout({ children }: Layout) {
       <body className={classFonts}>
         <Providers>
           <AppSidebar />
-          <main className="h-screen overflow-y-auto py-4">
+          <main className="w-full h-screen overflow-y-auto py-4">
             <SidebarTrigger className="md:hidden absolute top-2 left-2" />
             {children}
           </main>

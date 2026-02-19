@@ -91,12 +91,23 @@ export default function Home() {
       ))}
 
       <p className="text-justify max-w-xl px-8 mt-8">
-        Aiuto le persone a ritrovare benessere e serenità interiore e fisica
-        grazie a tecniche corporee e di rilassamento profondo, introspezione
-        guidata e riprogrammazione delle abitudini mentali che permettono di
-        accedere al potenziale subconscio, gestire lo stress e superare i
-        blocchi emotivi. Testimonianze
+        Aiuto le persone a ritrovare benessere, comprendendo il messaggio del
+        sintomo corporeo, valorizzandolo come possibilità di cambiamento
+        evolutivo e quindi al suo scioglimento; generando così la possibilità,
+        per ciascuno, di esprimere la propria unicità e autenticità, con sé
+        stessi e nella relazione con gli altri.
       </p>
+
+      <blockquote className="max-w-xl text-center my-8 px-8">
+        <p className="text-2xl font-medium leading-relaxed tracking-tight text-primary">
+          “Chi conosce gli altri è sapiente; chi conosce se stesso è
+          illuminato.”
+        </p>
+
+        <footer className="mt-2 text-sm text-muted-foreground">
+          Laozi, <cite className="not-italic">Daodejing</cite>, cap. 33
+        </footer>
+      </blockquote>
 
       <div className="flex gap-4 px-8 my-8">
         <Link
