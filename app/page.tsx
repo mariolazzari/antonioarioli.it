@@ -64,7 +64,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center pt-4">
       <Image
         className="rounded-full mb-4"
         src="/images/logo.png"

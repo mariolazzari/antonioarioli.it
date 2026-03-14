@@ -1,11 +1,11 @@
 import { GraduationCap, Home, User, CalendarDays, AtSign } from "lucide-react";
 
 export const links = [
-  { title: "Home", href: "/", icon: <Home /> },
-  { title: "Biografia", href: "/bio", icon: <User /> },
-  { title: "Esperienze", href: "/exp", icon: <CalendarDays /> },
-  { title: "Corsi", href: "/courses", icon: <GraduationCap /> },
-  { title: "Contatti", href: "/contacts", icon: <AtSign /> },
+  { title: "Home", href: "/", icon: <Home size={16} /> },
+  { title: "Biografia", href: "/bio", icon: <User size={16} /> },
+  { title: "Esperienze", href: "/exp", icon: <CalendarDays size={16} /> },
+  { title: "Corsi", href: "/courses", icon: <GraduationCap size={16} /> },
+  { title: "Contatti", href: "/contacts", icon: <AtSign size={16} /> },
 ];
 
 export const treats = [

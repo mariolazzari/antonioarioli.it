@@ -1,16 +1,17 @@
 "use client";
 import { Moon, Sun, SunMoon } from "lucide-react";
 import { useTheme } from "next-themes";
-import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useSidebar } from "../ui/sidebar";
 
 export function ThemeButton() {
   const { setTheme, theme } = useTheme();
+  const { open } = useSidebar();
 
   const renderButtons = () => {
     return [
@@ -40,10 +41,10 @@ export function ThemeButton() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger
-        className="flex items-center gap-2 "
-        onClick={(e) => e.stopPropagation()}
+        className="flex items-center gap-2 ml-2 mt-2"
+        onClick={e => e.stopPropagation()}
       >
-        {renderIcon()} <span className="">Tema</span>
+        {renderIcon()} {open && <span className="text-md">Tema</span>}
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">{renderButtons()}</DropdownMenuContent>
     </DropdownMenu>

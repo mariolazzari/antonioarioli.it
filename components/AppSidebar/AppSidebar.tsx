@@ -71,13 +71,17 @@ export function AppSidebar() {
         <SidebarGroup>
           <SidebarMenu className="capitalize">
             {links.map(({ href, title, icon }) => (
-              <Link key={href} href={href} onClick={onMobileClick}>
-                <SidebarMenuItem>
-                  <SidebarMenuButton>
-                    {icon} <span>{title}</span>
-                  </SidebarMenuButton>
-                </SidebarMenuItem>
-              </Link>
+              <SidebarMenuItem key={href}>
+                <SidebarMenuButton>
+                  <Link
+                    className="flex items-center gap-2"
+                    href={href}
+                    onClick={onMobileClick}
+                  >
+                    {icon} {title}
+                  </Link>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
             ))}
 
             <SidebarMenuItem>
@@ -100,10 +104,14 @@ export function AppSidebar() {
               <SidebarMenu>
                 {treats.map(t => (
                   <SidebarMenuItem key={t.href}>
-                    <SidebarMenuButton asChild>
-                      <Link href={t.href} onClick={onMobileClick}>
-                        <GiYinYang className="text-primary" />
-                        <span>{t.title}</span>
+                    <SidebarMenuButton>
+                      <Link
+                        className="flex items-center gap-2"
+                        href={t.href}
+                        onClick={onMobileClick}
+                      >
+                        <GiYinYang className="text-primary" size={16} />
+                        {open && t.title}
                       </Link>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
