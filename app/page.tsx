@@ -109,7 +109,7 @@ export default function Home() {
         </footer>
       </blockquote>
 
-      <div className="flex gap-4 px-8 my-8">
+      <div className="flex gap-4 px-8 mb-16">
         <Link
           href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MjMwNzg4MzcyMjI3MzM5?igsh=cmZubTNkbjUzMXF0"
           target="_blank"

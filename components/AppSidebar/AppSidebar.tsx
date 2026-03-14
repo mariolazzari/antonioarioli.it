@@ -34,7 +34,7 @@ export function AppSidebar() {
     setOpen(!open);
   };
 
-  const onMobileClick: MouseEventHandler<HTMLAnchorElement> = (e) => {
+  const onMobileClick: MouseEventHandler<HTMLAnchorElement> = e => {
     e.stopPropagation();
     // Only trigger on mobile view
     if (isMobile) {
@@ -81,7 +81,7 @@ export function AppSidebar() {
             ))}
 
             <SidebarMenuItem>
-              <SidebarMenuButton>
+              <SidebarMenuButton asChild>
                 <ThemeButton />
               </SidebarMenuButton>
             </SidebarMenuItem>
@@ -98,7 +98,7 @@ export function AppSidebar() {
             </SidebarGroupLabel>
             <CollapsibleContent>
               <SidebarMenu>
-                {treats.map((t) => (
+                {treats.map(t => (
                   <SidebarMenuItem key={t.href}>
                     <SidebarMenuButton asChild>
                       <Link href={t.href} onClick={onMobileClick}>
