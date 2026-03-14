@@ -44,7 +44,7 @@ export function AppSidebar() {
 
   return (
     <Sidebar className="cursor-pointer" collapsible="icon" onClick={onClick}>
-      <SidebarHeader className={cn("text-center", open && "p-8")}>
+      <SidebarHeader className={cn("text-center", open && "pt-4")}>
         <Image
           className="mx-auto rounded-full"
           src="/images/logo.png"
@@ -63,6 +63,7 @@ export function AppSidebar() {
               Discipline bio naturali
             </p>
             <Separator className="mt-2 bg-primary" />
+            <ThemeButton />
           </>
         )}
       </SidebarHeader>
@@ -78,17 +79,11 @@ export function AppSidebar() {
                     href={href}
                     onClick={onMobileClick}
                   >
-                    {icon} {title}
+                    {icon} <span className="text-md">{title}</span>
                   </Link>
                 </SidebarMenuButton>
               </SidebarMenuItem>
             ))}
-
-            <SidebarMenuItem>
-              <SidebarMenuButton asChild>
-                <ThemeButton />
-              </SidebarMenuButton>
-            </SidebarMenuItem>
           </SidebarMenu>
         </SidebarGroup>
 
@@ -100,6 +95,7 @@ export function AppSidebar() {
                 <ChevronDown className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-180" />
               </CollapsibleTrigger>
             </SidebarGroupLabel>
+
             <CollapsibleContent>
               <SidebarMenu>
                 {treats.map(t => (
@@ -111,7 +107,7 @@ export function AppSidebar() {
                         onClick={onMobileClick}
                       >
                         <GiYinYang className="text-primary" size={16} />
-                        {open && t.title}
+                        {open && <span className="text-sm">{t.title}</span>}
                       </Link>
                     </SidebarMenuButton>
                   </SidebarMenuItem>
