@@ -30,6 +30,8 @@ const img16 = "/images/courses/kine3.jpeg";
 const img17 = "/images/courses/kine4.jpeg";
 const img18 = "/images/courses/apos2.jpeg";
 const img19 = "/images/courses/kine4c.jpeg";
+const img20 = "/images/courses/ipnosi.png";
+const img21 = "/images/courses/ipnosi1.png";
 
 function CoursesPage() {
   const images = [
@@ -52,6 +54,8 @@ function CoursesPage() {
     { src: img17, alt: "kine4" },
     { src: img18, alt: "apos2" },
     { src: img19, alt: "kine4c" },
+    { src: img20, alt: "ipnosi" },
+    { src: img21, alt: "ipnosi1" },
   ];
 
   return (
@@ -61,7 +65,7 @@ function CoursesPage() {
       </h2>
 
       <div className="flex justify-center items-center flex-wrap gap-12">
-        {images.map(img => (
+        {images.reverse().map(img => (
           <Link key={img.src} href={img.src} target="_blank">
             <div className="w-80 h-72 relative hover:shadow-md">
               <Image src={img.src} alt={img.alt} fill priority />
