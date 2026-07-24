@@ -31,7 +31,7 @@ function KinePage() {
         Conosci la kinesiologia emozionale?
       </h3>
       <p className="mx-auto max-w-xl px-8 md:p-0">
-        La Kinesiologia Emozionale RD è l’arte di indagare nell’inconscio per
+        La Kinesiologia Emozionale è l’arte di indagare nell’inconscio per
         capire cosa sta bloccando un aspetto della tua vita.
       </p>
 
