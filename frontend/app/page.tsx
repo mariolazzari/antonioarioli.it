@@ -57,7 +57,7 @@ export default function Home() {
     {
       title: "Kinesiologia emozionale",
       description:
-        "La Kinesiologia Emozionale RD è l’arte di indagare nell’inconscio per capire cosa sta bloccando un aspetto della tua vita",
+        "La Kinesiologia Emozionale è l’arte di indagare nell’inconscio per capire cosa sta bloccando un aspetto della tua vita",
       imagePath: "/images/kine.png",
       href: "/kine",
     },
