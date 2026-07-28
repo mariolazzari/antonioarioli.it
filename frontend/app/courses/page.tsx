@@ -33,6 +33,7 @@ const img19 = "/images/courses/kine4c.jpeg";
 const img20 = "/images/courses/ipnosi.png";
 const img21 = "/images/courses/ipnosi1.png";
 const img22 = "/images/courses/apos2026.png";
+const img23 = "/images/courses/apos2026_2.jpg";
 
 function CoursesPage() {
   const images = [
@@ -58,6 +59,7 @@ function CoursesPage() {
     { src: img20, alt: "ipnosi" },
     { src: img21, alt: "ipnosi1" },
     { src: img22, alt: "apos2026" },
+    { src: img23, alt: "apos2026_2" },
   ];
 
   return (
